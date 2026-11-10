@@ -1,4 +1,14 @@
 {
   "title": "Vitrine du Réseau d'Applications",
-  "description": "Découvrez notre suite interconnectée d'applications conçues pour les flux de travail modernes."
+  "description": "Découvrez notre suite interconnectée d'applications conçues pour les flux de travail modernes.",
+  "language_label": "Langue",
+  "apps_heading": "Applications",
+  "open_app": "Ouvrir {name}",
+  "pending_link": "Lien en attente",
+  "pending_notice": "Les destinations des applications ne sont pas encore configurées. Les liens apparaîtront lorsque les URL réelles seront fournies.",
+  "skip_to_content": "Aller au contenu",
+  "app_descriptions": {
+    "app-one": "Automatisation avancée des flux de travail et synchronisation.",
+    "app-two": "Routage multilingue et gestion de contenu."
+  }
 }

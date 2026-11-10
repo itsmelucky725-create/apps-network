@@ -1,4 +1,14 @@
 {
   "title": "Apps-Netzwerk-Schaufenster",
-  "description": "Entdecken Sie unsere vernetzte Suite von Anwendungen für moderne Arbeitsabläufe."
+  "description": "Entdecken Sie unsere vernetzte Suite von Anwendungen für moderne Arbeitsabläufe.",
+  "language_label": "Sprache",
+  "apps_heading": "Anwendungen",
+  "open_app": "{name} öffnen",
+  "pending_link": "Link ausstehend",
+  "pending_notice": "Die Zieladressen der Anwendungen sind noch nicht konfiguriert. Die Links werden angezeigt, sobald die tatsächlichen App-URLs vorliegen.",
+  "skip_to_content": "Zum Inhalt springen",
+  "app_descriptions": {
+    "app-one": "Erweiterte Workflow-Automatisierung und Synchronisierung.",
+    "app-two": "Mehrsprachiges Routing und Inhaltsverwaltung."
+  }
 }

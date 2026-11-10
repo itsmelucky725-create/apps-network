@@ -1,4 +1,14 @@
 {
   "title": "Escaparate de la Red de Aplicaciones",
-  "description": "Explore nuestra suite interconectada de aplicaciones diseñadas para flujos de trabajo modernos."
+  "description": "Explore nuestra suite interconectada de aplicaciones diseñadas para flujos de trabajo modernos.",
+  "language_label": "Idioma",
+  "apps_heading": "Aplicaciones",
+  "open_app": "Abrir {name}",
+  "pending_link": "Enlace pendiente",
+  "pending_notice": "Todavía no se han configurado los destinos de las aplicaciones. Los enlaces aparecerán cuando se proporcionen las URL reales.",
+  "skip_to_content": "Ir al contenido",
+  "app_descriptions": {
+    "app-one": "Automatización avanzada de flujos de trabajo y sincronización.",
+    "app-two": "Enrutamiento multilingüe y gestión de contenido."
+  }
 }

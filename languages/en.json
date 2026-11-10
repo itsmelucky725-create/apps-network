@@ -1,4 +1,14 @@
 {
   "title": "Apps Network Showcase",
-  "description": "Explore our interconnected suite of applications built for modern workflows."
+  "description": "Explore our interconnected suite of applications built for modern workflows.",
+  "language_label": "Language",
+  "apps_heading": "Applications",
+  "open_app": "Open {name}",
+  "pending_link": "Link pending",
+  "pending_notice": "App destinations have not been configured yet. Links will appear once the real app URLs are supplied.",
+  "skip_to_content": "Skip to content",
+  "app_descriptions": {
+    "app-one": "Advanced workflow automation and syncing.",
+    "app-two": "Multi-language routing and content management."
+  }
 }
