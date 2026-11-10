@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zion Tech Group - Apps Network</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 40px; background: #f4f7f6; color: #333; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        h1 { color: #111; }
+        .app-list { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+        .app-card { background: #fafafa; padding: 15px; border: 1px solid #ddd; border-radius: 6px; }
+        .lang-selector { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-selector">
+            <label for="lang">Language: </label>
+            <select id="lang">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+                <option value="ja">日本語</option>
+            </select>
+        </div>
+        <h1 id="title">Apps Network Showcase</h1>
+        <p id="description">Explore our interconnected suite of applications built for modern workflows.</p>
+        
+        <div class="app-list">
+            <div class="app-card">
+                <h3>App One</h3>
+                <p>Advanced workflow automation and syncing.</p>
+            </div>
+            <div class="app-card">
+                <h3>App Two</h3>
+                <p>Multi-language routing and content management.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
