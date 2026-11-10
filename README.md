@@ -29,16 +29,16 @@ Open `http://localhost:8000/` and each locale route. All internal paths are rela
 
 ## App destinations
 
-The app registry uses the destinations supplied by the project owner:
+The showcase selects two existing products from the [published Zion Apps Network directory](https://ziontechgroup.com/apps/):
 
-- [App One](https://ziontechgroup.com/app-one)
-- [App Two](https://ziontechgroup.com/app-two)
+- `app-one`: [AI Automation Platform](https://ziontechgroup.com/apps/ai-automation-platform.html) — autonomous workflows for support, sales, and operations.
+- `app-two`: [Cloud Cost Optimizer](https://ziontechgroup.com/apps/cloud-cost-optimizer.html) — cloud rightsizing, commitment recommendations, and anomaly detection.
 
-All five locales use these exact canonical URLs. Locale-specific app destinations have not been supplied, so `localized_urls` remains empty. Configured apps render as links instead of pending labels.
+The internal IDs stay stable for translation compatibility; the visible card names and all five localized descriptions identify the actual products. Every showcase language uses the exact canonical destination. Product-specific locale overrides are not configured, and the build never invents locale routes or query parameters.
 
-External availability, redirects, and reciprocal navigation inside the destination apps still need separate verification. Passing the generated-link tests does not establish destination health or modify those apps.
+`tests/test_production_links.py` pins these selected product names and URLs, rejects the retired placeholder launch paths, and checks both links on the landing page and all five locale pages. These tests verify configuration and rendered markup, not public destination health. Recheck the live showcase and product content after deployment before closing the task.
 
-To add or change an app, update its registry entry with its actual name and HTTPS destination. Add `localized_urls` only for explicitly supported localized destinations; otherwise every locale uses the exact canonical URL. The build never guesses external locale routes or query parameters. Update `app_descriptions` in all five catalogs if adding app IDs.
+To intentionally change products, update the registry, all five descriptions, and the production-link fixtures together. The target product pages are maintained outside this repository; changing showcase links does not modify those applications.
 
 ## Deployment
 

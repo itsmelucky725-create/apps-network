@@ -1,4 +1,14 @@
 [
-  {"id": "app-one", "name": "App One", "url": "https://ziontechgroup.com/app-one", "localized_urls": {}},
-  {"id": "app-two", "name": "App Two", "url": "https://ziontechgroup.com/app-two", "localized_urls": {}}
+  {
+    "id": "app-one",
+    "name": "AI Automation Platform",
+    "url": "https://ziontechgroup.com/apps/ai-automation-platform.html",
+    "localized_urls": {}
+  },
+  {
+    "id": "app-two",
+    "name": "Cloud Cost Optimizer",
+    "url": "https://ziontechgroup.com/apps/cloud-cost-optimizer.html",
+    "localized_urls": {}
+  }
 ]
