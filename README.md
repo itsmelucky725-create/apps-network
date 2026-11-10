@@ -27,11 +27,18 @@ python -m http.server 8000 --directory _site
 
 Open `http://localhost:8000/` and each locale route. All internal paths are relative, so assets and navigation work under the GitHub Pages repository subpath. Every page includes the correct HTML language, localized metadata, alternate-language links, and a working language selector with a no-JavaScript fallback.
 
-## Real app destinations are still required
+## App destinations
 
-`App One` and `App Two` are the original placeholders. Their real names, destinations, supported locale URLs, and reciprocal navigation requirements have not been supplied. Their `url` values intentionally remain `null`: the UI shows localized pending labels rather than broken or invented links.
+The app registry uses the destinations supplied by the project owner:
 
-To wire a real app, update its registry entry with its actual name and verified HTTPS destination. Add `localized_urls` only for explicitly supported localized destinations; otherwise every locale uses the exact canonical URL. The build never guesses external locale routes or query parameters. Update `app_descriptions` in all five catalogs if adding app IDs. Confirm external destinations and reciprocal links in the actual app repositories before marking cross-app integration complete.
+- [App One](https://ziontechgroup.com/app-one)
+- [App Two](https://ziontechgroup.com/app-two)
+
+All five locales use these exact canonical URLs. Locale-specific app destinations have not been supplied, so `localized_urls` remains empty. Configured apps render as links instead of pending labels.
+
+External availability, redirects, and reciprocal navigation inside the destination apps still need separate verification. Passing the generated-link tests does not establish destination health or modify those apps.
+
+To add or change an app, update its registry entry with its actual name and HTTPS destination. Add `localized_urls` only for explicitly supported localized destinations; otherwise every locale uses the exact canonical URL. The build never guesses external locale routes or query parameters. Update `app_descriptions` in all five catalogs if adding app IDs.
 
 ## Deployment
 
