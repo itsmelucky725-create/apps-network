@@ -43,7 +43,9 @@ class SiteTests(unittest.TestCase):
             expected = "en" if page.parent == self.output else page.parent.name
             parsed = Page(page.read_text(encoding="utf-8"))
             self.assertEqual(parsed.matching("html")[0]["lang"], expected)
-            self.assertIn(self.catalogs[expected]["title"], unescape(page.read_text(encoding="utf-8"))))
+            title = self.catalogs[expected]["title"]
+            decoded_html = unescape(page.read_text(encoding="utf-8"))
+            self.assertIn(title, decoded_html)
 
     def test_every_language_links_to_all_five_locales(self):
         for page in self.pages():
